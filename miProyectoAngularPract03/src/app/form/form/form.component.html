@@ -1,0 +1,41 @@
+<br>
+<div class="content">
+    <div>
+        <form>
+  <label for="nombreBebida">Nombre de la bebida:</label>
+  <input type="text" id="nombreBebida" name="nombreBebida" formControlName="nombreBebida">
+
+  <label for="tipoAlcohol">Tipo de alcohol:</label>
+  <select id="tipoAlcohol" name="tipoAlcohol" formControlName="tipoAlcohol">
+    <option value="">Seleccione una opción</option>
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+  </select>
+
+  <label for="gradosDeAlcohol">Grados de alcohol:</label>
+  <input type="number" id="campoNumerico" name="gradosDeAlcohol" formControlName="gradosDeAlcohol">
+
+  <label for="tipoMezcla">Tipo de Mezcla:</label>
+  <select id="tipoMezcla" name="tipoMezcla" formControlName="tipoMezcla">
+    <option value="">Seleccione una opción</option>
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+  </select>
+
+  <label for="fechaCreacion">Fecha de Creación:</label>
+  <input type="date" id="fechaCreacion" name="fechaCreacion" formControlName="fechaCreacion">
+
+  <label for="campoEmail">Tu Mail?</label>
+  <input type="email" id="campoEmail" name="campoEmail" formControlName="campoEmail">
+
+  <label for="mayorEdad">Soy mayor de edad: </label>
+  <input type="checkbox" id="campoCheck1" name="mayorEdad" value="si" formControlName="mayorEdad">
+  <label for="mayorEdad"></label><br>
+
+  <input type="submit" value="Enviar" [disabled]="MyNewForm.invalid">
+</form>
+    </div>
+</div>
+<br>
